@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        img {
+            width: 150px;
+            height: 80px;
+            display: block;
+            margin: auto;
+        }
+
+        h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0px;
+            text-align: center;
+        }
+
+        header {
+            margin: auto;
+            border: 2px solid red;
+            width: 1300px;
+
+        }
+
+        .box {
+            border: 2px solid green;
+            background-color: grey;
+            padding: 2px 40px;
+            margin: 20px 0px;
+            /*If you want to make inline with given set padding and margin with parent 100% width then display inline-block */
+            display: inline-block;   
+            width: 33%;
+            border-radius: 3%;
+        }
+        .container{
+            margin: auto;
+    width: 1300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="index.jpeg" alt="remote image">
+        <h3>Welcome to nature side</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod excepturi quia, a tempora aspernatur
+                provident. Quo excepturi, expedita autem facilis qui adipisci veritatis commodi error exercitationem,
+                inventore, ducimus nulla necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quidem nobis ullam doloremque dolor atque. Placeat alias animi quasi quas.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod excepturi quia, a tempora aspernatur
+                provident. Quo excepturi, expedita autem facilis qui adipisci veritatis commodi error exercitationem,
+                inventore, ducimus nulla necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quidem nobis ullam doloremque dolor atque. Placeat alias animi quasi quas.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod excepturi quia, a tempora aspernatur
+                provident. Quo excepturi, expedita autem facilis qui adipisci veritatis commodi error exercitationem,
+                inventore, ducimus nulla necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quidem nobis ullam doloremque dolor atque. Placeat alias animi quasi quas.</p>
+        </div>
+    </div>
+</body>
+
+</html>

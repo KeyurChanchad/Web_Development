@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Column in Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* make 3 column first colomn width 200px then second 400px then 100px */
+            /* grid-template-columns: 300px 400px 100px;    */
+
+            /* grid-template-columns: 300px auto 100px;    */
+            /* grid-template-columns: auto auto 100px;    */
+
+            /* total width is divide in 1:4:2 fr means fraction unit */
+            /* grid-template-columns: 1fr 4fr 2fr;    */
+
+            grid-template-columns: repeat(3,auto);
+            grid-template-columns: repeat(5,200px);
+
+            grid-gap: 1rem;
+        }
+        .item{
+            /* height: 100px ;
+            width: 100px; */
+            border: 2px solid saddlebrown;
+            background-color: rgb(159, 204, 204);
+            padding: 14px 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is the Item-1 </div>
+        <div class="item">This is the Item-2 </div>
+        <div class="item">This is the Item-3 </div>
+        <div class="item">This is the Item-4 </div>
+        <div class="item">This is the Item-5 </div>
+        <div class="item">This is the Item-6 </div>
+        <div class="item">This is the Item-7 </div>
+        <div class="item">This is the Item-8 </div>
+        <div class="item">This is the Item-9 </div>
+        <div class="item">This is the Item-10 </div>
+
+    </div>
+</body>
+</html>

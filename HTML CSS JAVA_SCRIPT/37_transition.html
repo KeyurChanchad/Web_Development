@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition property</title>
+</head>
+<style>
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    /* In transition if transition-property "all" is not apply than it saddenly happended but not transforming */
+    /* transition-property: background-color; */
+    /* transition-property: background-color, color, font-size;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s; */
+    
+
+    /* shorthand property  */
+    /* transition:background-color 2s ease-out 2s; */
+    transition:all 10s ease-in .2s;
+}
+#box:hover{
+    background-color:magenta;
+    width: 400px;
+    height: 400px;
+    border-radius: 100px;
+    font-size: 40px;
+    color: cyan;
+}
+</style>
+<body>
+    <h2>This is Transition properties </h2>
+    <div class="container">
+        <div id="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

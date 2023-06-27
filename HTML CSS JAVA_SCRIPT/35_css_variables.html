@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Variables and custom properties</title>
+    <style>
+        /* This variables are global variables  */
+        :root{
+        --primary-color:rgb(35, 212, 235);
+        --danger-color:red;
+        --warning-color : yellow;
+        --maxw:500px;
+        }
+
+        .container{
+            display: flex;
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--danger-color);
+        }
+        .box{
+            /* this is local variable */
+            --box-color:pink;
+            height: 150px;
+            width: 150px;
+            background-color: var(--primary-color);
+            box-shadow: 5px 8px 10px 5px var(--box-color);
+            margin: 5px 10px;
+            border: 2px solid red;
+        }
+        .ex{
+            height: 150px;
+            width: 150px;
+             border: 2px solid green;
+            margin: 5px 20px;
+            background-color: var(--warning-color);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="ex"></div>
+    </div>
+</body>
+</html>

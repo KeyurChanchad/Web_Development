@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>box model,padding,margiin</title>
+        <style>
+           *{           /*  universal all element */
+                box-sizing: border-box;            
+                 /* width element ni aej rey padding ke margin vadharata asar thay nai tene undar thi padding ke margin male*/
+                 /* Element ki width fixed reheti he jab padding ya margin increase or decrease kijay.  */
+            } 
+            body{
+                background-color: rgb(95, 116, 38)
+            }
+        .container {
+            background-color: rgb(172, 110, 187);
+            border: 2px solid #b895c5;
+            
+           /* padding:20px;
+            margin: 30px;*/
+           /* padding-top:10px ;
+            padding-right:100px ;
+            padding-bottom: 20px;
+            padding-left: 70px;*/
+
+            /*margin-top:20px ;
+            margin-right:100px ;
+            margin-bottom: 20px;
+            margin-left: 70px;*/
+
+            /* padding:top right bottom left */
+            /* padding: 20px 100px 10px 46px; */
+            /* margin: 20px 46px 36px 19px; */
+
+            /* padding: (top/bottom) (left/right); */
+            padding:20px 39px;
+            margin: 19px 39px;
+            border-radius:30px;
+            width:700px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis placeat necessitatibus hic
+            minus? Assumenda ipsa tempora tenetur consequuntur atque quibusdam quae.
+        </p>
+    </div>
+    <div class="container">
+        <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis placeat necessitatibus hic
+            minus?
+            Assumenda ipsa tempora tenetur consequuntur atque quibusdam quae.
+            
+        </p>
+    </div>
+    <div class="container">
+        <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis placeat necessitatibus hic
+            minus?
+            Assumenda ipsa tempora tenetur consequuntur atque quibusdam quae.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">simple si html</div>
+    <script>
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        // This is Object similar like structure
+        // name, salary, channel---->key        keyur, 10, cwh----->value 
+        // In consol employee.channel/name/salary--->show value but employee.channel 2 gives error 
+        // In consol employee['channel 2'] or employee["channel 2"]
+        let employee = {
+            name : "Keyur",
+            salary: 10,
+            channel: "CodeWithKeyur",
+            "channel 2": "ProgrammingWithKeyur",
+        }
+        console.log(employee);
+
+        // let names = [1, 2, 4, "Keyur", undefined];
+        let names = new Array(41, 2, 4, "Keyur", undefined);
+        // this Array consider all things
+        // let names = new Array(23);
+        // above means Array(23) of size 23
+        console.log(`Length is = `+  names.length);
+        names = names.sort();
+        names.push("this is pushed at end");
+        console.log(names);
+        names.pop();
+        console.log(names);
+        
+    </script>
+</body>
+</html>

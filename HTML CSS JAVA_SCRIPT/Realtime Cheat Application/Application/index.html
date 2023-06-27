@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ichat - Realtime Cheat Application</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <!-- it must be first because it server site js -->
+</head>
+
+<body>
+    <nav>
+        <img src="chatlogo.png" alt="logo" class="logo">
+        <h1>Welcome to ichat App </h1>
+    </nav>
+    <div class="container">
+        <!-- <div class="message right">Keyur: Hey! Ravi How are you?</div>
+        <div class="message left">Ravi: I am fine and you?</div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="form-group">
+            <input type="text"  name="messageInp"  id="messageInp">
+            <button type="submit" class="btn">Send</button>
+    </div>
+    </form>
+</body>
+
+</html>

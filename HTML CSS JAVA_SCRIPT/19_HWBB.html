@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, border, background</title>
+    <style>
+        #fpara{
+            background-color: red;
+            height: 100px;
+            width: 500px;
+            border:5px solid blue;
+            /*border-width: 5px;
+            border-color: royalblue;
+            border-style: solid;*/
+            border-radius: 10px;
+
+        }
+        #spara{
+            background-color: rgb(37, 252, 9);
+            height: 100px;
+            width: 500px;
+            /* border:10px solid blue; */
+            border-top:10px solid blue;
+            border-left:10px solid rgb(255, 51, 0);
+            border-right:10px solid chocolate;
+            border-bottom: 10px solid pink;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 5px;
+        }
+        #tpara{
+            height: 400px;
+            width: 700px; 
+            background-image: url('index.jpeg');
+            border:3px solid rgba(116, 250, 6, 0.884);
+            background-repeat: no-repeat;
+            /* repeat-x,repaeat-y will make it repeat as x and y axis */
+
+            /* background-position: center right; */
+               /*first-part = center-top/bottom.. Y-axis , second part = left-right-center X-axis*/
+            /* background-position: 250px 200px; */
+            background-position: bottom right;
+             /* top/bottom/center-left/right */
+
+        }
+    </style>
+</head>
+<body>
+    <h3>This is first heading</h3>
+    <p id="fpara">This is frist paragraph</p>
+    <h3>This is first heading</h3>
+    <p id="spara">This is second paragraph</p>
+    <h3>This is first heading</h3>
+    <p id="tpara">This is third paragraph</p>
+</body>
+</html>

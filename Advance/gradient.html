@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Gradient</title>
+    <style>
+        .gradient{
+            display: flex;
+            justify-content: space-between;
+        }
+        .gradient1{
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(rgb(83, 207, 93), rgb(140, 93, 215), rgb(191, 63, 148));
+            /* margin-bottom: 12px; */
+        }
+        .gradient2{
+            height: 200px;
+            width: 200px;
+            background-image: radial-gradient(yellow, cadetblue, pink);
+        }
+        .gradient3{
+            height: 200px;
+            width: 200px;
+            background-image:  conic-gradient(orange, red , rgb(100, 183, 189));
+            /* margin-top: 16px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient">
+        <div class="gradient1">Linear gradiet</div>
+        <div class="gradient2">Radial gradiet</div>
+        <div class="gradient3">Conic gradiet</div>
+    </div>
+</body>
+</html>

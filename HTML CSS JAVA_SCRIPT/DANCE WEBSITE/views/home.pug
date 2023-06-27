@@ -1,0 +1,42 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css 
+
+block content
+    
+  section#introsection 
+      div Welcome to Keyur's Dance Academy
+      div.small  Ete Sleep Dance Repeate
+
+  section#missionsection 
+      h2 Our Mission
+      div.container 
+        div.card-items
+          h4  Hip Hop
+          img(src="/static/img/c1.jpg")
+          p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe, est quaerat nobis nemo sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, saepe.
+          
+        div.card-items 
+          h4 Jazz
+          img(src="/static/img/c2.jpg")
+          p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. A id quas ratione explicabo atque consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, rerum!
+          
+        div.card-items 
+          h4 Folk Dance
+          img(src="/static/img/c3.jpg")
+          p Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. A id quas ratione explicabo atque consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, rerum!
+  section#sponsorssection 
+      h3 Our Sponsors
+      div#sponsorimg
+          img(src="/static/img/logo1.png",class="spimage")
+          img(src="/static/img/logo2.png",class="spimage")
+          img(src="/static/img/logo3.png",class="spimage")
+          img(src="/static/img/logo4.png",class="spimage")

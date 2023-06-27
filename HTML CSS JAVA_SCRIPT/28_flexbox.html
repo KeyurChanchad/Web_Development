@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            /* initilize container as a flexbox  */
+            display: flex;
+
+            /* flex properties for flex containter  */
+
+            /* (defualt flex-direction is row //  It takes latest value) */
+            flex-direction: row;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse;             */
+            /* flex-direction: column-reverse;  */
+
+            /* defualt value is no wrap   //in brower right click inspect kari wrap ma mobile view karo  tyare niche jay  // it works with only row and row-reverse*/
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* this is shorthand for flexdirection and flexwrap  */
+            /* flex-flow: row-reverse wrap; */
+
+            /* justify-content is use-full for space between items in horizontal direction */
+            /* justify-content: center;  */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around;  */
+
+            /* flex start is defualt value of align-item  and it set in vertical form */
+            /* align-items: flex-start; */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: stretch;  */
+        }
+            /* flex properties for flex item  */
+            #item1 {
+                /* whose order number is larger that goto last and whose smaller it goes first by default order is 1 */
+                /* order: 2; */
+
+                /*jem flex-grow moto tem mobile/tablet view ma flex-grow ma item jaddi thay ; */
+                /* flex-grow:2 ; */
+
+                /* flex-shrink ma item patali thay jem flex-shrink moti tem  */
+                /* flex-shrink: 20; */
+            }
+
+            #item2 {
+                /* order: 6; */
+                 /* flex-grow: 3; */
+                /* flex-shrink: 10;  */
+                /* when flex-direction is set to row flex basis will control width   */
+                /* when flex-direction is set to column flex basis will control height   */
+                /* flex-basis: 100px; */
+            }
+
+            #item3 {
+                /* flex is sort-hand for flex-grow, flex-shrink and flex-basis */
+                flex :2 3 300px;   
+                 /* align-self: center; */
+                /*align-self: flex-start; */
+                 /* align-self: flex-end;  */
+            }
+
+            .item {
+                border: 2px solid black;
+                background-color: hotpink;
+                padding: 3px;
+                margin: 5px;
+                width: 150px;
+                height: 150px;
+            }
+            /* #item4,#item5, #item6{
+                background-color: tomato;
+                border:2px solid green;
+            } */
+    </style>
+</head>
+
+<body>
+    <h2>This is Flexbox tutorial</h2>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">second Box</div>
+        <div class="item" id="item3">third Box</div>
+        <div class="item" id="item4">forth Box</div>
+        <div class="item" id="item5">thifth Box</div>
+        <div class="item" id="item6">sixth Box</div>
+
+    </div>
+</body>
+
+</html>

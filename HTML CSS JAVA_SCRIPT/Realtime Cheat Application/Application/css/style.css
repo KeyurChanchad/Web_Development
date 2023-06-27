@@ -1,0 +1,85 @@
+*{   
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgb(233, 222, 222),green);
+    height: 100vh;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+nav h1{
+    text-align: center;
+    font-size: 20px;
+    font-family:fantasy ;
+    margin: 15px 0px;
+}
+.container{
+    border: 3px solid rgb(73, 33, 124);
+    border-radius: 13px;
+    /* background-color: rgb(144, 47, 255); */
+    margin: auto;
+    padding: 13px;
+    max-width: 70%;
+    height: 65vh;
+    overflow-y:auto;
+    margin-bottom: 20px;
+}
+
+.message{
+    background-color: rgb(126, 142, 177);
+    padding: 8px;
+    width: 25%;
+    border: 2px solid navy; 
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.right{
+    float: right;
+    clear: both;
+}
+.left{
+    float: left;
+    clear: both;
+}
+
+#form-group{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+#messageInp{
+    margin: 20px 5px;
+    width: 70%;
+    height: 25px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 20px;
+    padding: 0 12px;
+}
+
+.btn{
+    padding: 5px 18px;
+    border: 2px solid rgb(31, 29, 29);
+    /* border: none; */
+    border-radius: 23px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    background-color: blue;
+}
+.btn:hover{
+    color: whitesmoke;
+    background-color:navy ;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        #container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navigation navigation navigation navigation'
+            'section section aside aside'
+            'footer footer footer footer' ;
+        }
+        nav{
+            grid-area: navigation;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+
+        
+        @media only screen and (max-width:300px){
+            body{
+                background-color: palevioletred;
+            }
+            #container{
+            grid-template-areas:
+            'nav nav nav nav'
+            'section section section section'
+            'footer footer footer footer' ;
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width:300px) and (max-width:500px){
+            body{
+                background-color: khaki;
+            }
+            #container{
+            grid-template-areas:
+            'nav nav nav nav'
+            'section section section section '
+            'aside aside aside aside'
+            'footer footer footer footer' ;
+        }
+        span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width:800px){
+            body{
+                background-color: blue;
+            }
+            #container{
+            grid-template-areas:
+            'nav nav nav nav'
+            'section section section section'
+            'footer footer footer footer' ;
+            }
+            aside{
+                display: none;
+            }
+        }
+        @media only screen and (min-width:800px){
+            body{
+                background-color: green;
+            }
+        }
+
+        .stl{
+            border: 2px solid darkgray;
+            background-color: wheat;
+            padding: 13px;
+        }   
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav class="stl">
+            <span>Home</span> 
+            <span>About</span> 
+            <span>Contact</span> 
+            <span>Servises</span> 
+        </nav>
+        <section class="stl"><h3>Lorem ipsum dolor sit amet consecteturore nihil?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, obcaecati quibusdam repudiandae quaerat animi amet voluptas! Dolor, porro quisquam ab expedita rem reiciendis omnis libero corrupti quo quidem. Quam accusamus suscipit commodi, facere qui sint enim, aliquid quod neque consectetur veniam illum quo in sapiente debitis impedit provident! At perspiciatis ratione nostrum dolorem facilis quidem esse aliquid reiciendis exercitationem rerum eum corrupti deserunt libero nihil, error autem, tempora animi, enim voluptas corporis labore id magnam eos mollitia! Officiis ipsam ullam reprehenderit adipisci perferendis? Et, sit totam fugit modi at cum itaque in soluta nostrum? Cumque explicabo iste assumenda ullam voluptatibus voluptas. Culpa commodi alias reprehenderit temporibus non, nam officia voluptatibus laborum! Molestias omnis ipsum sunt. Dicta in blanditiis molestias consequatur eos iste deserunt?</section>
+        <aside class="stl"><h2> More on grid</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam corrupti ipsum provident quam similique, voluptatibus earum corporis quibusdam tempora optio voluptates illo autem fugiat possimus voluptatum dolorem non quas numquam, ullam deleniti tempore saepe, exercitationem odit quae? Voluptatem molestiae facilis vero veritatis molestias eum suscipit fugiat sed, quam natus harum quod magni?</p></aside>
+        <footer class="stl">Copyright &copy; CWK 2021</footer>
+</div>
+</body>
+</html>

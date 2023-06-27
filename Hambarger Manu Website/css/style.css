@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+    background-color: teal;
+    
+}
+.nav-list .logo{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 27%;
+    border: 2px solid #fc9c2d;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.nav-list{
+    width: 80%;
+    /* background-color: crimson; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    margin: 6px 12px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    padding: 5px 15px;
+     font-size: 20px;
+     color: white;
+}
+.nav-list li a:hover{
+   background-color:whitesmoke;
+   color: black;
+   border-radius: 20px;
+}
+
+.rightnav{
+    width: 40%;
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    padding: 4px 7px;
+    width: 50%;
+    margin: 7px 7px;
+    height: 20px;
+    border: 3px solid rgb(28 146 150);;
+    border-radius: 9px;
+    outline: none;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px; 
+    background: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+.btn-sm{
+    padding: 4px 10px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: white;
+}   
+.btn:hover{
+    color: white;
+    background-color: teal;
+}
+ .background{
+    background: rgba(175, 168, 168, 0.8) url('/img/bg2.jpg')  center center no-repeat fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+#allsec{
+    background: rgba(175, 168, 168, 0.8) url('/img/bg3.jpg')  center center no-repeat fixed;
+    background-size: cover;
+} 
+.firstSection{
+    height: 100vh;
+}
+.main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin: auto ;
+    padding-top: 50px;
+
+    height: 70%;
+}
+.fhalf{
+    margin: 15px 20px;
+}
+
+.text-big{
+    font-size: 35px;
+    padding: 10px 8px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: navy;
+    font-style: italic;
+}
+.text-small{
+    margin: 8px 10px;
+    font-size: 22px;
+    padding: 8px 15px;
+    color: rgb(62, 95, 13);
+}
+.buttons{
+    text-align: center;
+}
+.shalf{
+    max-width: 45%;
+    margin: 4px 10px;
+}
+.shalf img{
+    width: 60%; 
+    border: 4px solid white;
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+}
+
+.sec{
+    
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: 50px;
+    
+}
+
+.paras{
+    width: 70%;
+}
+
+.secimg{
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgFluid{
+    width: 70%;
+    margin: auto;
+    border: 4px solid whitesmoke;
+    border-radius: 15px;
+    box-shadow: 15px 20px  rgb(164 134 110);
+}
+
+.secmiddle{
+    flex-direction: row-reverse;
+}
+
+.contact{
+    width: 100%;
+    height: 90vh;
+    background:url('/img/logo.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70vh;
+    margin: auto;
+}
+.form input,textarea{
+    padding: 6px 9px;
+    margin: 12px 6px;
+    width: 90%;
+
+}
+.text-center{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: cursive;
+}
+.text-footer{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+   
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+    display: none;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}

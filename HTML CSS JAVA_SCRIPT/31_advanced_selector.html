@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced css selector</title>
+    <style>
+        /* This is universal selector */
+        *{
+            font-size: 1.2rem;
+        }
+
+        h2{
+            background-color: burlywood;
+            border: 2px solid rgb(131, 214, 138);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        /* The following example selects all <p> inside <li> of <div> */
+        /* div li p { 
+                background-color: teal;
+            color: tomato;
+            font-size: 20px;
+        } */
+
+        /* This selesctor is select all <p> inside <div>  */
+         /* div p{                    
+            background-color: teal;
+            color: tomato;
+            font-size: 20px;
+        } */
+
+        /* Child Selector :- This will effected only p which direct child of div  */
+        /* div > p{
+            background-color:pink;
+        } */
+
+        /* Adjacent Sibiling selector :- This will selects the first <p> element that are placed immediately after closing </div>*/
+        /* div + p{
+            background-color:cyan;
+        } */
+
+        /* General sibiling selector :- The following example selects all <p> elements that are placed after closing </div> direct child. */
+        /* div ~ p{
+            background-color: dimgray;
+        } */
+
+        a:link{
+            color: rgb(36, 38, 176, 0.7);
+        }
+
+        /* When you visit a link */
+        a:visited{
+            color: #00FF00;
+        }
+
+        /* When you click or activate link  */
+        a:active{
+            color:#ff00bb;
+        }
+
+        /* When you hover over the link. a:hover must be come after a:link and a:visited in css  */
+        a:hover{
+            color: rgb(237, 100, 100);
+        }
+
+    </style>
+</head>
+<body>
+    <h2>This is more on selector</h2>
+
+    <p>Checking para</p>
+
+    <div class="container">
+        <p> Hii code with keyur </p>
+        <div class="row">
+            <ul>
+                <li><p>This is paragragh inside li.</p></li>
+                <li>This will not effected .</li>
+            </ul>
+            <p>This is also paragraph.</p>
+        </div>
+        <p>This is simple paragraph.</p>
+        <h4><p>This is para inside the h4</p></h4>
+    </div>
+    <p>This is also simple out side div paragraph.</p>
+    <p>I am second out side div paragraph.</p>
+
+
+
+    <a href="https://google.com">Google</a>
+</body>
+</html>

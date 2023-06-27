@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size unite</title>
+    <style>
+        html{
+            font-size: 30px;
+        }
+        .container{
+            font-size: 20px;
+            border: 2px solid red;
+            /* vw=view port width and vh=view port height   */
+            /* width: 500px; */
+            width: 100vw;
+            /* height: 620px; */
+            height: 100vh;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /* em font size is calculate with there parent tag's font size * it's own font-size 10*20=200px */
+            /* font-size: 10em; */
+
+            /* em padding is calculate accroding to its font size  3*200px=600px */
+            /* padding: 3em; */
+
+            /* font-size rem is calcuted accroding to root element (html)  * its own size  3*30px=90px */
+            font-size: 3rem;
+            /*padding rem is calculated with root element (html) * its own size   3*30px=90px padding */
+            padding: 3rem;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="second">This is heading</h1>
+        <h1 id="third">This is heading</h1>
+        <h1 id="first">This is heading</h1>
+    </div>
+</body>
+</html>

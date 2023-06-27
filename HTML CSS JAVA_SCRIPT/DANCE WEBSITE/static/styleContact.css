@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#myform{
+    display: flex;     
+    flex-direction: column;
+    height: 70vh;
+    width: 45%;
+    margin: 13px auto;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 13px 16px;
+    color: lightblue;
+}
+#formcontainer{
+        background: url("/static/img/Contact.jpg") center/cover no-repeat;
+
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    background-color: #dacdcd;
+    margin-top: 13px;
+}
+.myinput{
+    margin: 5px 43px;
+    padding: 7px 10px;
+}
+
+.btn{
+    color: white;
+    margin: 5px 43px;
+    background-color: #386487;
+    border: 2px solid black;
+    border-radius: 13px;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 8px 6px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Spanning Multiple Colomns And Rows </title>
+    <style>
+        #grid{
+            display: grid;
+
+            /* grid-template-columns: 1fr 3fr 3fr; */
+            grid-template-columns: repeat(5, 1fr);
+            /* grid-column-gap: 7rem; */
+
+            /* grid-template-rows: repeat(3, 5fr); */
+            /* grid-row-gap: 5rem; */
+
+            grid-gap: 1rem;
+
+        }
+        .box{
+            background-color: rgb(241, 171, 206);
+            border: 1px solid black;
+            padding: 16px 3px;
+
+        }
+        /* First select any child  */
+        .box:first-child{
+            /* If you want to merge cell or make layout then use it. grid column start with 1 line goes to 3 line. grid row start with 1 line and end with 4 line. */
+            grid-column-start: 1;
+            grid-column-end: 3;
+            /* grid-row-start: 1;
+            grid-row-end: 4; */
+
+            /* This is sorthand property for merge cell column start with 1 and span 2 box  */
+            /* grid-column:  1 / span 2;
+            grid-row: 1 / span 3; */
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div class="box">Item~1</div>
+        <div class="box">Item~2</div>
+        <div class="box">Item~3</div>
+        <div class="box">Item~4</div>
+        <div class="box">Item~5</div>
+        <div class="box">Item~6</div>
+        <div class="box">Item~7</div>
+        <div class="box">Item~8</div>
+        <div class="box">Item~9</div>
+        <div class="box">Item~10</div>
+        <div class="box">Item~11</div>
+        <div class="box">Item~12</div>
+        <div class="box">Item~13</div>
+        <div class="box">Item~14</div>
+        <div class="box">Item~6</div>
+        <div class="box">Item~7</div>
+        <div class="box">Item~8</div>
+        <div class="box">Item~9</div>
+        <div class="box">Item~10</div>
+        <div class="box">Item~11</div>
+        <div class="box">Item~12</div>
+        <div class="box">Item~13</div>
+        <div class="box">Item~14</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio and Vidio tag</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h2>This is <abbr title="audio tag">Audio</abbr> tag</h2>
+    </div>
+    <div class="audio">
+        <audio src="Koyal Si Teri Boli.mp3" controls>
+            <source type="mp3">
+        </audio>
+    </div>
+    <div class="heading">
+        <h2>This is <abbr title="video tag">Video</abbr> tag</h2>
+    </div>
+    <div class="video">
+        <video src="Ramayan.mp4" width="800px" height="350px" controls>
+            <source type="Ramayan.mp4">
+        </video>
+    </div>
+
+    <div class="heading">
+        <h2>The map and area elements</h2>
+    </div>
+    <div id="area">
+        <img src="workplace.jpg" alt="workplace" usemap="#usemapid">
+        <map name="usemapid">
+            <area shape="circle" coords="280, 30, 40" href="cellphone.html" alt="phone">
+            <area shape="ract" coords="25, 45, 278, 341" href="mac.html" alt="mac">
+        </map>
+    </div>
+
+    <div class="heading">
+        <h1>The canvas element</h1>
+    </div>
+    <div id="canvas">
+        <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+    </div>
+
+    <div class="heading">
+        <h2>Caption element</h2>
+    </div>
+    <div id="caption">
+        <table>
+            <caption>
+                <h4>This is my table caption</h4>
+            </caption>
+            <colgroup>
+                <col span="2" style="background-color:red">
+                <col style="background-color:yellow">
+            </colgroup>
+            <tr>
+                <th>ISBN</th>
+                <th>Title</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>3476896</td>
+                <td>My first HTML</td>
+                <td>$53</td>
+            </tr>
+            <tr>
+                <td>5869207</td>
+                <td>My first CSS</td>
+                <td>$49</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="heading">
+        <h2>This is data list, data description, data title</h2>
+    </div>
+    <div id="data">
+        <dl>
+            <dt>Coffee</dt>
+                <dd>Black</dd>
+                <dd> hot</dd>
+                <dd>drink</dd>
+            <dt>Milk</dt>
+                <dd>White</dd>
+                <dd>cold</dd>
+                <dd>drink</dd>
+        </dl>
+    </div>
+
+
+    <div id="figure">
+        <figure>
+            <img src="mac.jpg" alt="Trulli" style="width:100%">
+            <figcaption>Fig.1 - Mac, Apple, America.</figcaption>
+          </figure>
+    </div>
+
+    <div id="del">
+        <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+    </div>
+
+
+    <div id="meter">
+        <label for="disk_c">Disk usage C:</label>
+        <meter id="disk_c" value="9" min="0" max="10" >9 out of 10</meter><br>
+
+        <label for="disk_d">Disk usage D:</label>
+        <meter id="disk_d" value="0.6">60%</meter>
+    </div>
+
+<div id="pre">
+    <pre>
+        Text in a pre element
+        is               displayed in a fixed-width
+        
+        font, and it preserves 
+        both      spaces and
+        line breaks and
+    </pre>
+</div>
+
+<div id="progress">
+    <label for="file">Downloading progress: 32% </label>
+    <progress id="file" style="accent-color: red;" value="32" max="100"> </progress>
+</div>
+
+<div id="sub">
+    <h2>H<sub>2</sub> O.</h2>
+</div>
+
+<div id="sup">
+    <h2>X<sup>2</sup> Y.</h2>
+</div>
+
+Search your friend Name : <input list="frd"  name="search">
+<datalist id="frd">
+    <option value="Vishal"></option>
+    <option value="Ankit"></option>
+    <option value="Nayan"></option>
+    <option value="Prashant"></option>
+    <option value="Dwarkesh"></option>
+    <option value="Nitesh"></option>
+    <option value="Nitesh"></option>
+    <option value="Sahil"></option>
+    <option value="Nilesh"></option>
+</datalist>
+
+<h2 class="heading"> Upload your profile photo </h2>
+<div style="display: flex; align-items: center; gap: 20px;">
+    <img src="mac.jpg" alt="Mac" id="profilePhoto" style="width:150px; height:150px; border-radius: 50%;">
+    <!-- accept="video/*"  accept all type video or /png, /jpg, /gif -->
+    <input type="file" name="fileUploader" id="fileUploader" accept="image/*" />  
+</div>
+
+<div style="width: 500px; height: 170px; background-color: rgba(0, 0, 0, 0.329); display: flex; justify-content: center; align-items:  center;">
+    <div style="width: 150px; height: 150px; background-color: deepskyblue;"></div>
+</div>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 100);
+
+        let img = document.querySelector('#profilePhoto');
+        let file = document.querySelector('#fileUploader');
+        file.addEventListener('change', ()=> {
+            img.src = URL.createObjectURL(file.files[0]);
+        })
+    </script>
+</body>
+
+</html>

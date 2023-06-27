@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data to Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+        <fieldset>
+            <legend>Registration</legend>
+                <div class="form-feild">
+                    <label for="name">Name <span class="star">*</span> : </label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-feild">
+                    <label for="email">Email <span class="star">*</span> : </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-feild">
+                    <label for="mobile">Mobie <span class="star">*</span> : </label>
+                    <input type="tel" name="mobile" id="mobile">
+                </div>
+                <div class="form-feild">
+                    <label for="">Gender <span class="star">*</span> : </label>
+                    <div id="male" class="radio">
+                        <label for="male">Male </label>
+                        <input type="radio" name="gender" id="male" value="Male">
+                    </div>
+                    <div id="female" class="radio">
+                        <label for="female" >Female </label>
+                        <input type="radio" name="gender" id="female" value="Female">
+                    </div>
+                    <div id="other" class="radio">
+                        <label for="other" >Other </label>
+                        <input type="radio" name="gender" id="other" value="Other">
+                    </div>
+                </div>
+                <div class="form-feild">
+                    <label for="city">City <span class="star">*</span> : </label>
+                    <select name="city" id="city">
+                        <option value="Amreli">Amreli</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Surat">Surat</option>
+                    </select>
+                </div>
+                <div class="form-feild">
+                    <label for="address">Address <span class="star">*</span> : </label>
+                    <textarea name="address" id="address" rows="5" cols="15"></textarea>
+                </div>
+                <div class="form-feild">
+                    <button type="button" name="signup" id="signup" onclick="getAndUpdate()"> SignUp </button>
+                    <button type="reset" name="reset" id="reset" > Reset </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h2>Show Data Table</h2>
+        <table border="2">
+           <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Gender</th>
+                    <th>City</th>
+                    <th>Address</th>
+                    <th>Action</th>
+                </tr>
+           </thead>
+           <tbody id="tableBody">
+                <tr scope="row">
+                    <td>1</td>
+                    <td>Keyur</td>
+                    <td>keyur@gmail.com</td>
+                    <td>1234567890</td>
+                    <td>Male</td>
+                    <td>Amreli</td>
+                    <td>khalpar, vanda, savrkundal</td>
+                    <td><button> Delete </button></td>
+                </tr>
+           </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

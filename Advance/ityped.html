@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is ityped js plugin</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #244D61;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container h1{
+            font-size: 3.7rem;
+            color: cadetblue;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #block{
+            font-size: 3.2rem;
+        }
+        #fixed{
+            color: #75E2FF;
+        }
+        #iType{
+            color: #EAEBED;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to ityped Js</h1>
+        <div id="block">
+            <span id="fixed">I am </span><span id="iType"></span>
+        </div>
+    </div>
+</body>
+<script src="ityped.js"></script>
+<script>
+    window.ityped.init(document.querySelector("#iType"),{
+        loop : true,
+        strings : ["Programmer", "Designer", "Coder", "Developer"]
+    });
+</script>
+</html>

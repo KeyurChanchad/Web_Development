@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo elements</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            background-color: rgb(35, 31, 31);
+            color: aliceblue;
+            font-size: 2rem;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+
+        }
+
+        .box{
+            border: 2px solid lavender;
+        }
+
+        .before::before{
+            content: "😂 alt + ,";
+        }
+
+        .after::after{
+            content: url("index.jpeg");
+        }
+
+        .first-line::first-line{
+            color:red;
+            font-variant: small-caps;
+        }
+
+        .first-letter::first-letter{
+            color: red;
+            font-size: xx-large;
+        }
+
+        ::selection{
+            color:beige;
+            background-color: rgb(0, 255, 21);
+        }
+
+        ::marker{
+            color:brown;
+            font-size: 18px;
+        }
+
+        .marker{
+            padding-left: 50px;
+        }
+        input::placeholder{
+            color: rgb(124, 124, 168);
+            font-size: 16px;
+            padding: 5px 9px;
+            margin: 3px 9px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box before">
+            <h1>This is use ::before pseudo</h1>
+        </div>
+        <div class="box after">
+            <h1>This is use ::after pseudo</h1>
+        </div>
+        <div class="box first-line">
+            <p>You can use the ::first-line pseudo element <br>
+            to add a special effect to <br> the first line of a text.</p>
+        </div>
+        <div class="box first-letter">
+             <p>You can use the ::first-letter pseudo element <br>
+            to add a special effect to <br> the first lettter of a text.</p>
+        </div>
+        <div class="box selection">
+             <h3>select some text on this page</h3>
+             <p>this is selection pseudo element</p>
+        </div>
+        <div class="box marker">
+            <ul>
+                <li>Milk</li>
+                <li>Coffee</li>
+                <li>Tea</li>
+            </ul>
+            <ol>
+                <li>Pottato</li>
+                <li>Tomatto</li>
+                <li>Chilly</li>
+            </ol>
+        </div>
+
+        <div class="box">
+            <input type="text" name="name" id="name" placeholder="Your name">
+        </div>
+    </div>
+</body>
+</html>

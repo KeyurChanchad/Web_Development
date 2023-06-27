@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text shadow</title>
+    <style>
+        .container{
+            display:flex;
+        }
+.box{
+    /* border: 2px solid red; */
+    background-color: darkkhaki;
+padding: 2px 5px;
+margin: 5px 15px;
+
+/* box-shadow: offsex-x offset-y color; */
+/* box-shadow: 6px 10px rgb(241, 221, 35);  */
+/* box-shadow:-6px -10px rgb(241, 221, 35);  */
+
+/* box-shadow:offsex-x offset-y blure-redius color; */
+/* box-shadow:6px 10px 20px rgb(241, 221, 35);  */
+/* box-shadow:-6px -10px 20px rgb(241, 221, 35);  */
+
+/* box-shadow:offsex-x offset-y blure-redius  spred-redius color; */
+/* box-shadow:6px 10px 20px 20px rgb(241, 221, 35);  */
+
+/* box-shadow:offsex-x offset-y blure-redius  spred-redius color-rgb(r,g,b,alpha) alpha means opacity; */
+/* box-shadow:6px 10px 20px 25px rgba(245, 228, 75, 0.5);  */
+
+/* inset gives shadow inside the element */
+/* box-shadow: inset 12px -20px red; */
+
+/* box-shadow: 5px 7px red,11px -5px green; */
+ 
+}
+.box h2{
+    text-shadow: 3px 3px rgb(241, 214, 56);
+    /* text-shadow: -3px -3px rgb(241, 214, 56); */
+    /* text-shadow: 3px 3px 5px rgb(241, 214, 56); */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>This is c++ course .</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta reiciendis necessitatibus similique quaerat officia beatae, minus delectus sit non cupiditate consectetur expedita distinctio nobis
+                
+            </p>
+        </div>
+        <div class="box">
+            <h2>This is HHTML course.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta reiciendis necessitatibus similique quaerat officia beatae, minus delectus sit non cupiditate consectetur expedita distinctio nobis</p>
+        </div>
+        <div class="box">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta reiciendis necessitatibus similique quaerat officia beatae, minus delectus sit non cupiditate consectetur expedita distinctio nobis</p>
+        </div>
+    </div>
+</body>
+</html>

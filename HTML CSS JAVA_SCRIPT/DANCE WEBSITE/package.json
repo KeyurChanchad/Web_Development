@@ -1,0 +1,21 @@
+{
+  "name": "keyur-dance-academy",
+  "version": "1.0.0",
+  "description": "This is the best website of the dance classes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dance"
+  ],
+  "author": "Keyur Chanchad",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "expresss": "0.0.0",
+    "mongoose": "^5.11.15",
+    "pug": "^3.0.0"
+  }
+}

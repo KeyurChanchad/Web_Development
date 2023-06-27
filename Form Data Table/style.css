@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 10px auto;
+}
+/* fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+legend{
+    text-align: center;
+}
+.form-feild{
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.form-feild label{
+    margin: 0px 6px;
+}
+
+.form-feild label span{
+    color : red;
+    position: relative;
+    bottom: 5px;
+    right: 2px;
+}
+
+.form-feild input, textarea{
+    padding: 4px 11px;
+    font-size: 0.9rem;
+    width: 50%;
+    border: 2px solid #a4b9ceb8;
+    outline: none;
+}
+
+.form-feild input:focus, .form-feild textarea:focus, .form-feild select:focus{
+    box-shadow: 2px 3px 6px #a4b9ceb8;
+}
+
+.form-feild input[type="radio"]{
+    width: 12px;
+}
+
+.form-feild textarea{
+    width: 583px;
+    height: 97px;
+}
+
+.form-feild select{
+    padding: 4px 7px;
+    font-size: 0.9rem;
+}
+
+ button{
+    padding: 6px 13px;
+    margin: 4px 8px;
+    color: whitesmoke;
+    background-color: cadetblue;
+    border: 2px solid cadetblue;
+    border-radius: 10%;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+button:hover{
+    color: cadetblue;
+    background-color: aliceblue;
+}
+
+.form-feild .radio{
+    margin: 0 15px;
+}
+
+table{
+    border: none;
+    width: 100%;
+    margin: 30px 0px;
+}
+
+tr{
+    margin: 10px 6px;
+}
+
+td{
+    padding: 4px 12px;
+}
+
+thead:first-child th{
+    padding: 2px 4px;
+    margin: 2x 5px !important;
+}
+
+h2{
+    margin-top: 1.5rem;
+}

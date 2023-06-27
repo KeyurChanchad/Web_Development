@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript SetTimeOut and setInterval</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="span_id_time"></span>
+    </div>
+
+    <script>
+    console.log("This is tutorial 58");
+    // setTimeout --> Allow us to run the function once after the interval of time over
+    // setInterval --> Allow us to run the function repeatedly after the interval of time over
+
+    function greet(name, byeText){
+        console.log("Hello Good Morning " + name + ", " + byeText);
+    }
+
+    //setTimeout function return id of that. 
+    // timeOutId = setTimeout(greet, 5000, "Keyur", "Take Care");    //---->show after 5s
+    // console.log("This is ID of settimeout " + timeOutId);
+
+    // clearTimeout(timeOutId);   //It takes timeout id and destroy that setTimeout function
+    
+    // setTimeout(greet(), 12000); --> Wrong as it is calling the function inside setTimeout
+
+
+    //setInterval function execute repetedly after interval time it return id
+    intervalId = setInterval(greet, 3000, "Keyur", "Good Night");
+    clearInterval(intervalId);  //It takes id of setInterval
+
+    function displayTime(){
+        let time = new Date();
+        console.log(time);
+        document.getElementById('span_id_time').innerText = time;
+    }
+    setInterval(displayTime,  1000);
+
+    </script>
+</body>
+</html>

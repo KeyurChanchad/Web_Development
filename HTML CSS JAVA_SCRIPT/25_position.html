@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* position relative, absolute, static(default), fixed ,sticky */
+        .container{
+            border: 5px solid goldenrod;
+            background-color: rgb(63, 164, 231);
+            height: 3000px;
+        }
+        .box{
+            border:2px solid rgb(46, 245, 20);
+            width: 150px;
+            height: 100px;
+            margin: 5px;
+            display: inline-block;
+
+        }
+        #box3{
+            /* positon relative means it apply position(top, left, right, bottom) to its normal position.  */
+            /* position: relative;
+            left: 30px;
+            top: 15px; */
+
+            /* position absolute means is apply position from body(main view) tag and over the content */
+            position: absolute;
+            left: 30px;
+            top: 40px;
+
+            /* position fixed means it position related to viewport which means it always stay in the same place even if the page is scroll.*/
+            /* position:fixed;
+            right: 3px;
+            bottom: 2px; */
+
+            /* position sticky is relative to the normal position and fixed */
+            /* position: sticky;
+            top: 3px; */
+            background-color: #ff88ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1. Box</div>
+        <div class="box" id="box2">2. Box</div>
+        <div class="box" id="box3">cheat with us</div>
+        <div class="box" id="box4">4. Box</div>
+    </div>
+    
+</body>
+</html>
